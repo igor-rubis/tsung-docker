@@ -26,5 +26,5 @@ echo "Tsung log directory should be ${current_date}"
 cmd='tsung -l /usr/local/tsung/ '$@
 echo "Executin ${cmd} ..."
 ${cmd}
-cd /usr/local/tsung/${current_date}/ && /usr/lib64/tsung/bin/tsung_stats.pl
+cd /usr/local/tsung/${current_date}/ && /usr/lib64/tsung/bin/tsung_stats.pl --dygraph
 
